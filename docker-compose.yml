@@ -210,7 +210,6 @@ services:
     container_name: portainer
     restart: always
     ports:
-      - "8000:8000"
       - "9443:9443"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -222,3 +221,7 @@ volumes:
   loki-data:
   promtail-data:
   portainer_data:
+
+networks:
+  default:
+    name: portainer_network
