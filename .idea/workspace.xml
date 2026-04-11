@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca54ee4b-9fc0-4e9c-ac08-d22d519ead24" name="Changes" comment="remove unused imports in TaskManager and update workspace file changes">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/legacy/ArtifactsMMO" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/legacy/ArtifactsMMO/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +185,7 @@
       <workItem from="1775892357428" duration="392000" />
       <workItem from="1775892804743" duration="9137000" />
       <workItem from="1775909961989" duration="5347000" />
-      <workItem from="1775915370455" duration="175000" />
+      <workItem from="1775915370455" duration="710000" />
     </task>
     <task id="LOCAL-00001" summary="add dockerfile">
       <option name="closed" value="true" />
