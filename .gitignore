@@ -1,0 +1,10 @@
+.env
+
+apps/legacy/ArtifactsMMO/node_modules
+apps/legacy/ArtifactsMMO/.env
+
+apps/orchestrator/dist
+apps/orchestrator/node_modules
+
+apps/worker/node_modules
+apps/worker/dist

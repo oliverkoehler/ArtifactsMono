@@ -1,0 +1,19 @@
+{
+  "name": "artifactsmmo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "artifacts-api-client": "^2.0.0",
+    "dotenv": "^17.4.1",
+    "pino": "^10.3.1",
+    "pino-loki": "^3.0.0"
+  }
+}

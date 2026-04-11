@@ -1,0 +1,2 @@
+[worker:worker] CHARACTER is not set. Local startup works, but task execution requires a valid character name.
+^C

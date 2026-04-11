@@ -1,0 +1,21 @@
+
+> worker@1.0.0 start
+> node dist/apps/worker/src/index.js
+
+[worker:worker] connected to redis://127.0.0.1:6379
+[worker:worker] listening on artifactsmmo:tasks:worker and artifactsmmo:tasks:all
+New message on direct channel:
+{
+  taskId: 'local-test',
+  orchestratorId: 'manual',
+  target: 'worker',
+  type: 'farm',
+  payload: { item: 'SUNFLOWERS' }
+}
+{
+  resultId: 'caa6271e-81b1-4c2c-a970-672883080aa6',
+  taskId: 'local-test',
+  workerId: 'worker',
+  status: 'failed',
+  payload: { acceptedTaskType: 'farm', reason: 'Character not found.' }
+}

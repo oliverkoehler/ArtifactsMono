@@ -1,0 +1,212 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  orchestrator:
+    labels:
+      - "service=orchestrator"
+      - "app=artifactsmmo"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: orchestrator
+    container_name: orchestrator
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+      - RESULTS_CHANNEL=artifactsmmo:results
+      - WORKER_STATE_PREFIX=artifactsmmo:workers
+      - TASK_INTERVAL_MS=5000
+    depends_on:
+      - redis
+
+  worker-char-1:
+    labels:
+      - "service=worker"
+      - "app=artifactsmmo"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: worker
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - CHARACTER=olli
+      - REDIS_URL=redis://redis:6379
+      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+      - RESULTS_CHANNEL=artifactsmmo:results
+      - WORKER_STATE_PREFIX=artifactsmmo:workers
+      - WORKER_PROCESSING_MS=1500
+    depends_on:
+      - redis
+      - orchestrator
+
+  docker-metrics-exporter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: docker-metrics-exporter
+    container_name: docker-metrics-exporter
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  prometheus:
+    image: prom/prometheus:v2.54.1
+    container_name: prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    depends_on:
+      - docker-metrics-exporter
+
+  loki:
+    image: grafana/loki:3.1.1
+    container_name: loki
+    restart: unless-stopped
+    ports:
+      - "3100:3100"
+    command:
+      - -config.file=/etc/loki/local-config.yaml
+    volumes:
+      - ./monitoring/loki/loki-config.yml:/etc/loki/local-config.yaml:ro
+      - loki-data:/loki
+
+  promtail:
+    image: grafana/promtail:3.1.1
+    container_name: promtail
+    restart: unless-stopped
+    command:
+      - -config.file=/etc/promtail/config.yml
+    volumes:
+      - ./monitoring/promtail/promtail.yml:/etc/promtail/config.yml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - promtail-data:/tmp
+    depends_on:
+      - loki
+
+  grafana:
+    image: grafana/grafana-oss:11.1.0
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/var/lib/grafana/dashboards/container-resources.json
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources:ro
+      - ./monitoring/grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    depends_on:
+      - prometheus
+      - loki
+
+  worker-char-2:
+    labels:
+      - "service=worker"
+      - "app=artifactsmmo"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: worker
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - CHARACTER=olli-2
+      - REDIS_URL=redis://redis:6379
+      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+      - RESULTS_CHANNEL=artifactsmmo:results
+      - WORKER_STATE_PREFIX=artifactsmmo:workers
+      - WORKER_PROCESSING_MS=1500
+    depends_on:
+      - redis
+      - orchestrator
+
+  worker-char-3:
+    labels:
+      - "service=worker"
+      - "app=artifactsmmo"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: worker
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - CHARACTER=olli-3
+      - REDIS_URL=redis://redis:6379
+      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+      - RESULTS_CHANNEL=artifactsmmo:results
+      - WORKER_STATE_PREFIX=artifactsmmo:workers
+      - WORKER_PROCESSING_MS=1500
+    depends_on:
+      - redis
+      - orchestrator
+
+  worker-char-4:
+    labels:
+      - "service=worker"
+      - "app=artifactsmmo"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: worker
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - CHARACTER=olli-4
+      - REDIS_URL=redis://redis:6379
+      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+      - RESULTS_CHANNEL=artifactsmmo:results
+      - WORKER_STATE_PREFIX=artifactsmmo:workers
+      - WORKER_PROCESSING_MS=1500
+    depends_on:
+      - redis
+      - orchestrator
+
+
+  worker-char-5:
+    labels:
+      - "service=worker"
+      - "app=artifactsmmo"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: worker
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - CHARACTER=olli-5
+      - REDIS_URL=redis://redis:6379
+      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+      - RESULTS_CHANNEL=artifactsmmo:results
+      - WORKER_STATE_PREFIX=artifactsmmo:workers
+      - WORKER_PROCESSING_MS=1500
+    depends_on:
+      - redis
+      - orchestrator
+
+volumes:
+  prometheus-data:
+  grafana-data:
+  loki-data:
+  promtail-data:

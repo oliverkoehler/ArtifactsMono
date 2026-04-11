@@ -1,0 +1,20 @@
+{
+  "name": "orchestrator",
+  "version": "1.0.0",
+  "main": "dist/apps/orchestrator/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/apps/orchestrator/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "redis": "^5.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca54ee4b-9fc0-4e9c-ac08-d22d519ead24" name="Changes" comment="remove unused imports in TaskManager and update workspace file changes">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/legacy/ArtifactsMMO/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="39" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Dockerfile" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;oliverkoehler&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/oliverkoehler/ArtifactsMMO.git&quot;,
+    &quot;accountId&quot;: &quot;6f5396c4-6d7f-43e9-b5a0-430f2b0694fe&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="AISelfReview" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3BzEh6V0HcduR9tZyONWE7H8HTj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.tasks.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/Artifactsmmo/apps/worker/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.docker:build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.docker:logs.executor&quot;: &quot;Run&quot;,
+    &quot;npm.docker:stop.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AIAssistantPromptsLibrary&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Desktop\\Artifactsmmo\\apps\\orchestrator\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Artifactsmmo\apps\worker\src" />
+      <recent name="D:\Desktop\Artifactsmmo\apps\legacy\ArtifactsMMO" />
+      <recent name="D:\Desktop\Artifactsmmo\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.docker:stop">
+    <configuration name="docker:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docker:build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker:logs" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docker:logs" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker:stop" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docker:stop" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.docker:stop" />
+        <item itemvalue="npm.docker:logs" />
+        <item itemvalue="npm.docker:build" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca54ee4b-9fc0-4e9c-ac08-d22d519ead24" name="Changes" comment="" />
+      <created>1775483614406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775483614406</updated>
+      <workItem from="1775483615507" duration="10580000" />
+      <workItem from="1775507248723" duration="2760000" />
+      <workItem from="1775511629255" duration="4216000" />
+      <workItem from="1775517891094" duration="7000" />
+      <workItem from="1775544327208" duration="2386000" />
+      <workItem from="1775560327481" duration="7470000" />
+      <workItem from="1775588483579" duration="856000" />
+      <workItem from="1775599473571" duration="904000" />
+      <workItem from="1775601848644" duration="1208000" />
+      <workItem from="1775650433680" duration="757000" />
+      <workItem from="1775652936682" duration="3940000" />
+      <workItem from="1775667440153" duration="334000" />
+      <workItem from="1775670032768" duration="58000" />
+      <workItem from="1775680210836" duration="52000" />
+      <workItem from="1775819566633" duration="3672000" />
+      <workItem from="1775854965339" duration="4067000" />
+      <workItem from="1775862136116" duration="4398000" />
+      <workItem from="1775892357428" duration="392000" />
+      <workItem from="1775892804743" duration="9137000" />
+      <workItem from="1775909961989" duration="5347000" />
+      <workItem from="1775915370455" duration="175000" />
+    </task>
+    <task id="LOCAL-00001" summary="add dockerfile">
+      <option name="closed" value="true" />
+      <created>1775512877102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775512877102</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <option name="closed" value="true" />
+      <created>1775513787812</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775513787812</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add docker-compose file">
+      <option name="closed" value="true" />
+      <created>1775514731407</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775514731407</updated>
+    </task>
+    <task id="LOCAL-00004" summary="remove unnecessary env_file from docker-compose">
+      <option name="closed" value="true" />
+      <created>1775514853131</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775514853131</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update docker-compose: rename container and add TOKEN environment variable">
+      <option name="closed" value="true" />
+      <created>1775514933363</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1775514933363</updated>
+    </task>
+    <task id="LOCAL-00006" summary="remove unused volume from docker-compose">
+      <option name="closed" value="true" />
+      <created>1775515108259</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775515108259</updated>
+    </task>
+    <task id="LOCAL-00007" summary="remove unused volume from docker-compose">
+      <option name="closed" value="true" />
+      <created>1775515327344</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775515327344</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix typo in startup log message">
+      <option name="closed" value="true" />
+      <created>1775515470635</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1775515470635</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactor item handling: replace sunflowers logic with gudgeon and improve error handling">
+      <option name="closed" value="true" />
+      <created>1775544898782</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1775544898782</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update item handling: integrate config.json, improve gathering logic, and adjust inventory threshold">
+      <option name="closed" value="true" />
+      <created>1775546213410</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1775546213410</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update gathering logic: adjust inventory threshold, fix cooldown handling, and update startup log version">
+      <option name="closed" value="true" />
+      <created>1775546612650</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1775546612650</updated>
+    </task>
+    <task id="LOCAL-00012" summary="comment out dotenv configuration">
+      <option name="closed" value="true" />
+      <created>1775560757317</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775560757317</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update gathering logic: adjust inventory threshold to 90 items">
+      <option name="closed" value="true" />
+      <created>1775563924944</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1775563924944</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor logging: replace console.log with structured logger">
+      <option name="closed" value="true" />
+      <created>1775564759727</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1775564759727</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update startup log: include version number">
+      <option name="closed" value="true" />
+      <created>1775565063445</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1775565063445</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor logging: replace process.stdout.write with console.log">
+      <option name="closed" value="true" />
+      <created>1775565264304</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1775565264304</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refactor logging: replace console.log with process.stdout.write">
+      <option name="closed" value="true" />
+      <created>1775565356165</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1775565356165</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update item handling: add ash_wood to constants and update config.json item">
+      <option name="closed" value="true" />
+      <created>1775565731826</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1775565731826</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add pino-loki for structured logging integration">
+      <option name="closed" value="true" />
+      <created>1775566765038</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1775566765038</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add pino for enhanced logging capabilities">
+      <option name="closed" value="true" />
+      <created>1775566809038</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1775566809038</updated>
+    </task>
+    <task id="LOCAL-00021" summary="refactor logging: adjust loggerInstance argument structure">
+      <option name="closed" value="true" />
+      <created>1775566954058</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1775566954058</updated>
+    </task>
+    <task id="LOCAL-00022" summary="refactor logging: modify loggerInstance to separate log message from metadata">
+      <option name="closed" value="true" />
+      <created>1775567071911</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1775567071911</updated>
+    </task>
+    <task id="LOCAL-00023" summary="refactor logging: update transport config and adjust loggerInstance setup">
+      <option name="closed" value="true" />
+      <created>1775567259466</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1775567259466</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactor logging: update transport and enhance loggerInstance configuration">
+      <option name="closed" value="true" />
+      <created>1775567637958</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1775567637958</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update config: change item from ash_wood to copper_ore">
+      <option name="closed" value="true" />
+      <created>1775588733927</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1775588733927</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update config: change item from gudgeon to copper_ore and sunflowers">
+      <option name="closed" value="true" />
+      <created>1775667616673</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1775667616674</updated>
+    </task>
+    <task id="LOCAL-00027" summary="update config: change item from copper_ore to gudgeon">
+      <option name="closed" value="true" />
+      <created>1775667715038</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1775667715038</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update config: change item from copper_ore to gudgeon">
+      <option name="closed" value="true" />
+      <created>1775670048977</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1775670048977</updated>
+    </task>
+    <task id="LOCAL-00029" summary="update config: change item to chicken, update coordinates, and adjust bot logic for combat">
+      <option name="closed" value="true" />
+      <created>1775820684715</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1775820684715</updated>
+    </task>
+    <task id="LOCAL-00030" summary="update config: change item to chicken for char-3, char-4, and char-5">
+      <option name="closed" value="true" />
+      <created>1775820758567</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1775820758567</updated>
+    </task>
+    <task id="LOCAL-00031" summary="update config: adjust inventory limit check from 10 to 95">
+      <option name="closed" value="true" />
+      <created>1775820933161</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1775820933161</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update config: change item to yellow-slime, add monster flag, update coordinates, and adjust combat logic">
+      <option name="closed" value="true" />
+      <created>1775839089588</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1775839089588</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update config: adjust combat rest threshold from 60 HP to 80 HP">
+      <option name="closed" value="true" />
+      <created>1775840290463</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1775840290463</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Init">
+      <option name="closed" value="true" />
+      <created>1775855220536</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1775855220536</updated>
+    </task>
+    <task id="LOCAL-00035" summary="migrate to Redis-based task management: add Redis services, update configs, and integrate Redis into orchestrator and worker">
+      <option name="closed" value="true" />
+      <created>1775857855128</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1775857855128</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add TaskManager to worker and update environment configuration">
+      <option name="closed" value="true" />
+      <created>1775866842533</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1775866842533</updated>
+    </task>
+    <task id="LOCAL-00037" summary="add farming task handling and item dump logic to TaskManager, update constants, and adjust environment configuration">
+      <option name="closed" value="true" />
+      <created>1775902956196</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1775902956196</updated>
+    </task>
+    <task id="LOCAL-00038" summary="sync shared task types and update build processes for orchestrator and worker">
+      <option name="closed" value="true" />
+      <created>1775909984243</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1775909984243</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add Docker metrics exporter and monitoring stack with Prometheus, Loki, and Grafana">
+      <option name="closed" value="true" />
+      <created>1775912620734</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1775912620734</updated>
+    </task>
+    <task id="LOCAL-00040" summary="add Docker metrics exporter and monitoring stack with Prometheus, Loki, and Grafana">
+      <option name="closed" value="true" />
+      <created>1775915123958</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1775915123958</updated>
+    </task>
+    <task id="LOCAL-00041" summary="remove unused imports in TaskManager and update workspace file changes">
+      <option name="closed" value="true" />
+      <created>1775915153594</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1775915153594</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor logging: replace process.stdout.write with console.log" />
+    <MESSAGE value="refactor logging: replace console.log with process.stdout.write" />
+    <MESSAGE value="update item handling: add ash_wood to constants and update config.json item" />
+    <MESSAGE value="add logging transport: integrate pino-loki for structured and remote logging" />
+    <MESSAGE value="add pino-loki for structured logging integration" />
+    <MESSAGE value="add pino for enhanced logging capabilities" />
+    <MESSAGE value="refactor logging: adjust loggerInstance argument structure" />
+    <MESSAGE value="refactor logging: modify loggerInstance to separate log message from metadata" />
+    <MESSAGE value="refactor logging: update transport config and adjust loggerInstance setup" />
+    <MESSAGE value="refactor logging: update transport and enhance loggerInstance configuration" />
+    <MESSAGE value="update config: change item from ash_wood to copper_ore" />
+    <MESSAGE value="update config: change item from gudgeon to copper_ore and sunflowers" />
+    <MESSAGE value="update config: change item from copper_ore to gudgeon" />
+    <MESSAGE value="update config: change item to chicken, update coordinates, and adjust bot logic for combat" />
+    <MESSAGE value="update config: change item to chicken for char-3, char-4, and char-5" />
+    <MESSAGE value="update config: adjust inventory limit check from 10 to 95" />
+    <MESSAGE value="update config: change item to yellow-slime, add monster flag, update coordinates, and adjust combat logic" />
+    <MESSAGE value="update config: adjust combat rest threshold from 60 HP to 80 HP" />
+    <MESSAGE value="Init" />
+    <MESSAGE value="migrate to Redis-based task management: add Redis services, update configs, and integrate Redis into orchestrator and worker" />
+    <MESSAGE value="add TaskManager to worker and update environment configuration" />
+    <MESSAGE value="add farming task handling and item dump logic to TaskManager, update constants, and adjust environment configuration" />
+    <MESSAGE value="sync shared task types and update build processes for orchestrator and worker" />
+    <MESSAGE value="add Docker metrics exporter and monitoring stack with Prometheus, Loki, and Grafana" />
+    <MESSAGE value="remove unused imports in TaskManager and update workspace file changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unused imports in TaskManager and update workspace file changes" />
+  </component>
+</project>

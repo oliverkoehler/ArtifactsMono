@@ -1,0 +1,14 @@
+services:
+  bot-char-1:
+    build: .
+    restart: unless-stopped
+    environment:
+      - TOKEN=${TOKEN}
+      - CHARACTER=char-1
+
+#  bot-char-2:
+#    build: .
+#    restart: unless-stopped
+#    environment:
+#      - TOKEN=${TOKEN}
+#      - CHARACTER=char-2
