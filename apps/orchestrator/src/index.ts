@@ -85,7 +85,7 @@ async function main(): Promise<void> {
     type: "farm",
     payload: {
       item: "SUNFLOWERS",
-      rounds: 1000
+      rounds: 1000000000000
     }
   })
 
@@ -96,7 +96,7 @@ async function main(): Promise<void> {
     type: "farm",
     payload: {
       item: "GUDGEON",
-      rounds: 1000
+      rounds: 1000000000000
     }
   })
 
@@ -107,7 +107,7 @@ async function main(): Promise<void> {
     type: "farm",
     payload: {
       item: "COPPER_ORE",
-      rounds: 1000
+      rounds: 1000000000000
     }
   })
 
@@ -118,7 +118,7 @@ async function main(): Promise<void> {
     type: "farm",
     payload: {
       item: "ASH_WOOD",
-      rounds: 1000
+      rounds: 1000000000000
     }
   })
 
@@ -129,7 +129,7 @@ async function main(): Promise<void> {
     type: "farm",
     payload: {
       item: "ASH_WOOD",
-      rounds: 1000
+      rounds: 1000000000000
     }
   })
 

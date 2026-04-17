@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca54ee4b-9fc0-4e9c-ac08-d22d519ead24" name="Changes" comment="Remove unused port and define custom network in docker-compose configuration">
+    <list default="true" id="ca54ee4b-9fc0-4e9c-ac08-d22d519ead24" name="Changes" comment="Fix infinite loop in task handling and add port mapping for Portainer">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/orchestrator/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/orchestrator/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/worker/src/taskManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/worker/src/taskManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +189,7 @@
       <workItem from="1775933548499" duration="2000" />
       <workItem from="1775936165049" duration="598000" />
       <workItem from="1775971183753" duration="106000" />
-      <workItem from="1776458281480" duration="148000" />
+      <workItem from="1776458281480" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="add dockerfile">
       <option name="closed" value="true" />
@@ -534,7 +535,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775916433067</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Fix infinite loop in task handling and add port mapping for Portainer">
+      <option name="closed" value="true" />
+      <created>1776458447548</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1776458447549</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +561,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update item handling: add ash_wood to constants and update config.json item" />
     <MESSAGE value="add logging transport: integrate pino-loki for structured and remote logging" />
     <MESSAGE value="add pino-loki for structured logging integration" />
     <MESSAGE value="add pino for enhanced logging capabilities" />
@@ -577,6 +585,7 @@
     <MESSAGE value="remove unused imports in TaskManager and update workspace file changes" />
     <MESSAGE value="Add Portainer service to docker-compose configuration" />
     <MESSAGE value="Remove unused port and define custom network in docker-compose configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unused port and define custom network in docker-compose configuration" />
+    <MESSAGE value="Fix infinite loop in task handling and add port mapping for Portainer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix infinite loop in task handling and add port mapping for Portainer" />
   </component>
 </project>

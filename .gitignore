@@ -8,3 +8,5 @@ apps/orchestrator/node_modules
 
 apps/worker/node_modules
 apps/worker/dist
+
+.idea
