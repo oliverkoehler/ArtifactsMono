@@ -11,6 +11,9 @@ export class TaskManager {
         for (let i = 0; i < (task.payload.rounds || 1); i++) {
             if (task.type === "farm") {
                 await this.handleFarmTask(task)
+                if (task.payload.rounds === 0) {
+                    i--
+                }
             } else {
                 return {
                     resultId: crypto.randomUUID(),

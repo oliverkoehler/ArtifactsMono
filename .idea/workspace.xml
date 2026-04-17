@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca54ee4b-9fc0-4e9c-ac08-d22d519ead24" name="Changes" comment="Add Portainer service to docker-compose configuration">
+    <list default="true" id="ca54ee4b-9fc0-4e9c-ac08-d22d519ead24" name="Changes" comment="Remove unused port and define custom network in docker-compose configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/worker/src/taskManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/worker/src/taskManager.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,12 +37,12 @@
     &quot;assignee&quot;: &quot;oliverkoehler&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/oliverkoehler/ArtifactsMono.git",
-    "accountId": "6f5396c4-6d7f-43e9-b5a0-430f2b0694fe"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/oliverkoehler/ArtifactsMono.git&quot;,
+    &quot;accountId&quot;: &quot;6f5396c4-6d7f-43e9-b5a0-430f2b0694fe&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -183,7 +184,11 @@
       <workItem from="1775892357428" duration="392000" />
       <workItem from="1775892804743" duration="9137000" />
       <workItem from="1775909961989" duration="5347000" />
-      <workItem from="1775915370455" duration="1046000" />
+      <workItem from="1775915370455" duration="1582000" />
+      <workItem from="1775933548499" duration="2000" />
+      <workItem from="1775936165049" duration="598000" />
+      <workItem from="1775971183753" duration="106000" />
+      <workItem from="1776458281480" duration="148000" />
     </task>
     <task id="LOCAL-00001" summary="add dockerfile">
       <option name="closed" value="true" />
@@ -521,7 +526,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775916134978</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Remove unused port and define custom network in docker-compose configuration">
+      <option name="closed" value="true" />
+      <created>1775916433067</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1775916433067</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +552,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor logging: replace console.log with process.stdout.write" />
     <MESSAGE value="update item handling: add ash_wood to constants and update config.json item" />
     <MESSAGE value="add logging transport: integrate pino-loki for structured and remote logging" />
     <MESSAGE value="add pino-loki for structured logging integration" />
@@ -564,6 +576,7 @@
     <MESSAGE value="add Docker metrics exporter and monitoring stack with Prometheus, Loki, and Grafana" />
     <MESSAGE value="remove unused imports in TaskManager and update workspace file changes" />
     <MESSAGE value="Add Portainer service to docker-compose configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Portainer service to docker-compose configuration" />
+    <MESSAGE value="Remove unused port and define custom network in docker-compose configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused port and define custom network in docker-compose configuration" />
   </component>
 </project>
