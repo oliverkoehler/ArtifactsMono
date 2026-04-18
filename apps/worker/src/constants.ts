@@ -22,6 +22,7 @@ export const coords = {
     ASH_WOOD: { x: 6, y: 1 },
     CHICKEN: { x: 0, y: 1 },
     YELLOW_SLIME: { x: 1, y: -2 },
+    SHRIMP: { x: 5, y: 2 },
 } as const;
 
 export const farmCoords = {
@@ -32,4 +33,5 @@ export const farmCoords = {
     ASH_WOOD: coords.ASH_WOOD,
     CHICKEN: coords.CHICKEN,
     YELLOW_SLIME: coords.YELLOW_SLIME,
+    SHRIMP: coords.SHRIMP,
 } satisfies Record<FarmItem, Coordinate>;

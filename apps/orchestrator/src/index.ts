@@ -84,7 +84,7 @@ async function main(): Promise<void> {
     target: "olli",
     type: "farm",
     payload: {
-      item: "SUNFLOWERS",
+      item: "SHRIMP",
       rounds: 1000000000000
     }
   })
@@ -95,7 +95,7 @@ async function main(): Promise<void> {
     target: "olli-2",
     type: "farm",
     payload: {
-      item: "GUDGEON",
+      item: "SHRIMP",
       rounds: 1000000000000
     }
   })
@@ -106,7 +106,7 @@ async function main(): Promise<void> {
     target: "olli-3",
     type: "farm",
     payload: {
-      item: "COPPER_ORE",
+      item: "SHRIMP",
       rounds: 1000000000000
     }
   })

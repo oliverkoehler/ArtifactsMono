@@ -5,7 +5,8 @@ export const FARM_ITEMS = [
   "ASH_WOOD",
   "CHICKEN",
   "YELLOW_SLIME",
-    "IRON_ORE"
+    "IRON_ORE",
+    "SHRIMP"
 ] as const;
 
 export type FarmItem = (typeof FARM_ITEMS)[number];
