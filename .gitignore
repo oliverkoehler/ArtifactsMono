@@ -10,3 +10,4 @@ apps/worker/node_modules
 apps/worker/dist
 
 .idea
+.idea/workspace.xml
