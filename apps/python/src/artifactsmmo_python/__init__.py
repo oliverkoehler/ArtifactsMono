@@ -1,0 +1,1 @@
+"""Artifactsmmo Python service."""

@@ -9,5 +9,9 @@ apps/orchestrator/node_modules
 apps/worker/node_modules
 apps/worker/dist
 
+apps/python/.venv
+apps/python/__pycache__
+apps/python/src/__pycache__
+
 .idea
 .idea/workspace.xml

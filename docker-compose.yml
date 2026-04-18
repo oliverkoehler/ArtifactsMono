@@ -6,48 +6,63 @@ services:
     ports:
       - "6379:6379"
 
-  orchestrator:
+  python-app:
     labels:
-      - "service=orchestrator"
+      - "service=python-app"
       - "app=artifactsmmo"
     build:
       context: .
       dockerfile: Dockerfile
-      target: orchestrator
-    container_name: orchestrator
-    restart: unless-stopped
-    env_file:
-      - .env
+      target: python-app
+    container_name: python-app
     environment:
-      - REDIS_URL=redis://redis:6379
-      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
-      - RESULTS_CHANNEL=artifactsmmo:results
-      - WORKER_STATE_PREFIX=artifactsmmo:workers
-      - TASK_INTERVAL_MS=5000
-    depends_on:
-      - redis
+      - METRICS_PORT=8000
+    expose:
+      - "8000"
+    restart: unless-stopped
 
-  worker-char-1:
-    labels:
-      - "service=worker"
-      - "app=artifactsmmo"
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: worker
-    restart: unless-stopped
-    env_file:
-      - .env
-    environment:
-      - CHARACTER=olli
-      - REDIS_URL=redis://redis:6379
-      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
-      - RESULTS_CHANNEL=artifactsmmo:results
-      - WORKER_STATE_PREFIX=artifactsmmo:workers
-      - WORKER_PROCESSING_MS=1500
-    depends_on:
-      - redis
-      - orchestrator
+#  orchestrator:
+#    labels:
+#      - "service=orchestrator"
+#      - "app=artifactsmmo"
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#      target: orchestrator
+#    container_name: orchestrator
+#    restart: unless-stopped
+#    env_file:
+#      - .env
+#    environment:
+#      - REDIS_URL=redis://redis:6379
+#      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+#      - RESULTS_CHANNEL=artifactsmmo:results
+#      - WORKER_STATE_PREFIX=artifactsmmo:workers
+#      - TASK_INTERVAL_MS=5000
+#    depends_on:
+#      - redis
+#
+#  worker-char-1:
+#    labels:
+#      - "service=worker"
+#      - "app=artifactsmmo"
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#      target: worker
+#    restart: unless-stopped
+#    env_file:
+#      - .env
+#    environment:
+#      - CHARACTER=olli
+#      - REDIS_URL=redis://redis:6379
+#      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+#      - RESULTS_CHANNEL=artifactsmmo:results
+#      - WORKER_STATE_PREFIX=artifactsmmo:workers
+#      - WORKER_PROCESSING_MS=1500
+#    depends_on:
+#      - redis
+#      - orchestrator
 
   docker-metrics-exporter:
     build:
@@ -116,94 +131,94 @@ services:
       - prometheus
       - loki
 
-  worker-char-2:
-    labels:
-      - "service=worker"
-      - "app=artifactsmmo"
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: worker
-    restart: unless-stopped
-    env_file:
-      - .env
-    environment:
-      - CHARACTER=olli-2
-      - REDIS_URL=redis://redis:6379
-      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
-      - RESULTS_CHANNEL=artifactsmmo:results
-      - WORKER_STATE_PREFIX=artifactsmmo:workers
-      - WORKER_PROCESSING_MS=1500
-    depends_on:
-      - redis
-      - orchestrator
-
-  worker-char-3:
-    labels:
-      - "service=worker"
-      - "app=artifactsmmo"
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: worker
-    restart: unless-stopped
-    env_file:
-      - .env
-    environment:
-      - CHARACTER=olli-3
-      - REDIS_URL=redis://redis:6379
-      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
-      - RESULTS_CHANNEL=artifactsmmo:results
-      - WORKER_STATE_PREFIX=artifactsmmo:workers
-      - WORKER_PROCESSING_MS=1500
-    depends_on:
-      - redis
-      - orchestrator
-
-  worker-char-4:
-    labels:
-      - "service=worker"
-      - "app=artifactsmmo"
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: worker
-    restart: unless-stopped
-    env_file:
-      - .env
-    environment:
-      - CHARACTER=olli-4
-      - REDIS_URL=redis://redis:6379
-      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
-      - RESULTS_CHANNEL=artifactsmmo:results
-      - WORKER_STATE_PREFIX=artifactsmmo:workers
-      - WORKER_PROCESSING_MS=1500
-    depends_on:
-      - redis
-      - orchestrator
-
-
-  worker-char-5:
-    labels:
-      - "service=worker"
-      - "app=artifactsmmo"
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: worker
-    restart: unless-stopped
-    env_file:
-      - .env
-    environment:
-      - CHARACTER=olli-5
-      - REDIS_URL=redis://redis:6379
-      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
-      - RESULTS_CHANNEL=artifactsmmo:results
-      - WORKER_STATE_PREFIX=artifactsmmo:workers
-      - WORKER_PROCESSING_MS=1500
-    depends_on:
-      - redis
-      - orchestrator
+#  worker-char-2:
+#    labels:
+#      - "service=worker"
+#      - "app=artifactsmmo"
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#      target: worker
+#    restart: unless-stopped
+#    env_file:
+#      - .env
+#    environment:
+#      - CHARACTER=olli-2
+#      - REDIS_URL=redis://redis:6379
+#      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+#      - RESULTS_CHANNEL=artifactsmmo:results
+#      - WORKER_STATE_PREFIX=artifactsmmo:workers
+#      - WORKER_PROCESSING_MS=1500
+#    depends_on:
+#      - redis
+#      - orchestrator
+#
+#  worker-char-3:
+#    labels:
+#      - "service=worker"
+#      - "app=artifactsmmo"
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#      target: worker
+#    restart: unless-stopped
+#    env_file:
+#      - .env
+#    environment:
+#      - CHARACTER=olli-3
+#      - REDIS_URL=redis://redis:6379
+#      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+#      - RESULTS_CHANNEL=artifactsmmo:results
+#      - WORKER_STATE_PREFIX=artifactsmmo:workers
+#      - WORKER_PROCESSING_MS=1500
+#    depends_on:
+#      - redis
+#      - orchestrator
+#
+#  worker-char-4:
+#    labels:
+#      - "service=worker"
+#      - "app=artifactsmmo"
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#      target: worker
+#    restart: unless-stopped
+#    env_file:
+#      - .env
+#    environment:
+#      - CHARACTER=olli-4
+#      - REDIS_URL=redis://redis:6379
+#      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+#      - RESULTS_CHANNEL=artifactsmmo:results
+#      - WORKER_STATE_PREFIX=artifactsmmo:workers
+#      - WORKER_PROCESSING_MS=1500
+#    depends_on:
+#      - redis
+#      - orchestrator
+#
+#
+#  worker-char-5:
+#    labels:
+#      - "service=worker"
+#      - "app=artifactsmmo"
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#      target: worker
+#    restart: unless-stopped
+#    env_file:
+#      - .env
+#    environment:
+#      - CHARACTER=olli-5
+#      - REDIS_URL=redis://redis:6379
+#      - TASK_CHANNEL_PREFIX=artifactsmmo:tasks
+#      - RESULTS_CHANNEL=artifactsmmo:results
+#      - WORKER_STATE_PREFIX=artifactsmmo:workers
+#      - WORKER_PROCESSING_MS=1500
+#    depends_on:
+#      - redis
+#      - orchestrator
 
   portainer:
     image: portainer/portainer-ce:latest

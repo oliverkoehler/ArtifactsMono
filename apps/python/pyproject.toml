@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "artifactsmmo-python"
+version = "0.1.0"
+description = "Python service for Artifactsmmo"
+requires-python = ">=3.12"
+dependencies = [
+    "prometheus-client>=0.21,<1.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
