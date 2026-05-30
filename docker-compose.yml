@@ -231,12 +231,31 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
 
+  haushaltsbot:
+    labels:
+      - "service=haushaltsbot"
+      - "app=haushaltsbot"
+    build:
+      context: /opt/apps/haushaltsbot/Haushalts-Telegram-Bot
+      dockerfile: Dockerfile
+    container_name: haushaltsbot
+    restart: unless-stopped
+    init: true
+    env_file:
+      - /opt/apps/haushaltsbot/Haushalts-Telegram-Bot/.env
+    environment:
+      - DATA_DIR=/data
+      - TZ=Europe/Berlin
+    volumes:
+      - haushaltsbot-data:/data
+
 volumes:
   prometheus-data:
   grafana-data:
   loki-data:
   promtail-data:
   portainer_data:
+  haushaltsbot-data:
 
 networks:
   default:
